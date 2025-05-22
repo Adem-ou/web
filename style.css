@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #38b677;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input[type="number"]:focus {
+    border-color: #66ff00;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+    background-color: #48be6f;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #47fc00;
+    transform: translateY(-2px);
+}
+
+.result-area {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.result-area p {
+    margin: 5px 0;
+}
+
+.result-area .bmi-value {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.result-area .bmi-category {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.result-area.underweight .bmi-value, .result-area.underweight .bmi-category {
+    color: #ffc107;
+}
+
+.result-area.normal .bmi-value, .result-area.normal .bmi-category {
+    color: #28a745;
+}
+
+.result-area.overweight .bmi-value, .result-area.overweight .bmi-category {
+    color: #fd7e14;
+}
+
+.result-area.obese .bmi-value, .result-area.obese .bmi-category {
+    color: #dc3545;
+}
